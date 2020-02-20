@@ -1,0 +1,7 @@
+<div class="container">
+  <h1>List of all cocktails</h1>
+  <% @cocktails.each_with_index do |cocktail, index| %>
+  <h2><%= "#{index + 1} -"%> <%= link_to "#{cocktail.name}", cocktail_path(cocktail) %></h2>
+  <% end %>
+</div>
+<%= render 'form_new', cocktail: @new_cocktail %>
