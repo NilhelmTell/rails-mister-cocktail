@@ -1,10 +1,18 @@
 <div class="container">
   <h2><%= @cocktail.name %></h2>
+  <div>
+    <% if @cocktail.photo.attached? %>
+      <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %></div>
+    <% else %>
+    <%= image_tag "https://static.standard.co.uk/s3fs-public/thumbnails/image/2016/09/30/10/cocktails.jpg", alt: "alttext" %>
+    <% end %>
   <ul><% @cocktail.doses.each do |dose| %>
     <li><%= dose.description %> of <%= dose.ingredient.name %></li>
     <li><%= link_to "delete dose", dose_path(dose), method: :delete %></li>
     <% end %>
   </ul>
+  <%= link_to 'Edit', edit_cocktail_path(@cocktail) %>
+  <br>
   <%= link_to "Delete this cocktail", cocktail_path(@cocktail), method: :delete %>
   <br>
   <br>
