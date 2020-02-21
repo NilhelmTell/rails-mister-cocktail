@@ -1,8 +1,7 @@
 <div class="container">
   <p>Create a new cocktail</p>
     <%= form_for(cocktail) do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, placeholder: "type here your cocktail" %>
     <%= f.submit %>
     <% end %>
 </div>
