@@ -5,10 +5,11 @@
     <li><%= link_to "delete dose", dose_path(dose), method: :delete %></li>
     <% end %>
   </ul>
-
-  <%#= link_to "Delete this cocktail", cocktail_path(@cocktail), method: :delete %>
+  <%= link_to "Delete this cocktail", cocktail_path(@cocktail), method: :delete %>
   <br>
   <br>
-  <%= link_to "Add dose", new_cocktail_dose_path(@cocktail) %>
+  <%#= link_to "Add dose", new_cocktail_dose_path(@cocktail) %>
+  <%= render 'doses/form_new_dose', dose: @dose %>
+  <br>
   <%= link_to "Back to all the cocktails", cocktails_path %>
 </div>
