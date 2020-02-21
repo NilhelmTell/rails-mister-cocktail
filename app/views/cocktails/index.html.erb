@@ -1,12 +1,12 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1559571509-ccba3c42e1e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80);">
   <h1><strong>Cocktails at Babu's</strong></h1>
-  <h2>A unforgettable experience: do your own cocktail.
-  Mr. Babu will review it and drink it</h2>
-
+  <h2>A unforgettable experience: do your own cocktail.</h2>
+  <h2>Mr. Babu will review it and drink it!!</h2>
+  <%= render 'form_new', cocktail: @new_cocktail %>
 </div>
 
-<div class="container">
-  <h1 class="navbar-lewagon">Here the list of the first cocktails that have already been reviewed&drinked by Mr. Babu</h1>
+<div class="container pb-5">
+  <h1>Here the list of the first cocktails that have already been reviewed&drinked by Mr. Babu</h1>
   <div class="flexbox">
     <% @cocktails.each do |cocktail| %>
       <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
@@ -14,5 +14,5 @@
       </div>
     <% end %>
   </div>
-  <%= render 'form_new', cocktail: @new_cocktail %>
+
 </div>

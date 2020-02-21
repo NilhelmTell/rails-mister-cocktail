@@ -4,8 +4,8 @@ class CocktailsController < ApplicationController
     @new_cocktail = Cocktail.new
   end
 
-  def new
-  end
+  # def new
+  # end
 
   def create
     @cocktail = Cocktail.new(cocktail_params)
@@ -31,6 +31,6 @@ class CocktailsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     # Only allow a list of trusted parameters through.
     def cocktail_params
-      params.require(:cocktail).permit(:name)
+      params.require(:cocktail).permit(:name, :photo)
     end
 end

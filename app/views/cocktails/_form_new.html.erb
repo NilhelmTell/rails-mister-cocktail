@@ -1,9 +1,9 @@
 <div class="container">
-  <p>Create a new cocktail</p>
-    <%= form_for(cocktail) do |f| %>
-    <%= f.text_field :name, placeholder: "type here your cocktail" %>
+    <%= simple_form_for(cocktail) do |f| %>
+    <%= f.input :name, placeholder: "create a new cocktail" %>
+    <%= f.input :photo, as: :file %>
     <%= f.submit %>
     <% end %>
 </div>
 
-<form action="/cocktails"></form>
+<!-- <form action="/cocktails"></form> -->

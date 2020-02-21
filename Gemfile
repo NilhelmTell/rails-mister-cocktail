@@ -5,6 +5,7 @@ ruby '2.6.5'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'autoprefixer-rails'
 gem 'simple_form'
+gem 'cloudinary', '~> 1.12.0'
 gem 'font-awesome-sass', '~> 5.6.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
