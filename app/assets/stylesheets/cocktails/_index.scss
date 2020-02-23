@@ -1,6 +1,45 @@
-.flexbox {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  // justify-content: space-evenly;
+.btn-gradient {
+  color: white;
+  padding: 8px 24px;
+  margin: 8;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#167FFB, #0F60C4);
+  transition: background 0.3s ease;
+  border: 1px solid #0F60C4;
+  position: center;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(#147EFF, #0F67DA);
+  color: white;
+}
+
+.header_t {
+  margin: 0;
+  color: blue;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Gloria Hallelujah';
+  text-align: center;
+  padding: 25 px;
+}
+
+.body {
+  margin: 0;
+  background-color: white;
+}
+
+.a:link {
+  color: #746F68;
+}
+.a:visited {
+  color: #FFFFFF;
+}
+.a:hover {
+  color: #CCCCCC;
+}
+.a:active {
+  color: #333333;
 }

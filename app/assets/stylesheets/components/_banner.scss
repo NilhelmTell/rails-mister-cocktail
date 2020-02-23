@@ -1,7 +1,8 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  padding: 100px 0;
+  margin-bottom: 50px
 }
 
 .banner h1 {
@@ -10,23 +11,21 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 38px;
   font-weight: bold;
-  font-family: 'Tomorrow', ;
+  font-family: 'Tomorrow';
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .banner h2 {
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-  font-size: 28px;
-  font-weight: bold;
-  font-family: 'Tomorrow', ;
+  font-size: 24px;
+  font-weight: lighter;
+  font-family: 'Tomorrow';
   text-align: center;
 }
 
-.banner p {
-  font-size: 20px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+.banner img {
+  height: 300px;
 }
